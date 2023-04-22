@@ -121,13 +121,6 @@ nav ul li a{
     z-index: -1;
     color: aliceblue;
 }
-.scroll p{
-    position: absolute;
-    height: 10vh;    
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .scroll img{
     display: flex;
     justify-content: center;
