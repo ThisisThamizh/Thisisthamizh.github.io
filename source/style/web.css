@@ -182,8 +182,8 @@ nav ul li a{
     border-radius: 10px;
 }
 .container-1 .up img{
-    position: absolute;
-    bottom: 7px;
+    position: relative;
+    bottom: 56px;
     left: 250px;
     margin-top: auto;
     width: 235px;
