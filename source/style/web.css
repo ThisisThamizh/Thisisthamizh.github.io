@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@300;400;500;600;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -15,11 +13,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-}
-.wrapper{
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 h1{
     color: #ECEFF4;
@@ -169,36 +162,39 @@ nav ul li a{
     align-items: center
 
 }
-.container-1{
-    width: 93.5%;
-    height: 50vh;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
     z-index: 2;
-    transform: translateX(100px);
 }
-.container-1 h1{
+.container h1{
     font-size: 50px;
     font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.container-1 h3{
+.container h3{
     font-size: 20px;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.container-1 p{
+.container p{
     font-size: 17px;
     font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: solid 2px transparent;
 }
-.container-1 img{
+.front-image img{
     margin-top: 11px;
     filter: grayscale(100%);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
     border-radius: 10px;
     transition: 1s;
 }
-.container-1 .up img{
+.up img{
     position: relative;
     bottom: 56px;
     left: 250px;
@@ -208,12 +204,12 @@ nav ul li a{
     border-radius: 10px;
     transition: 1s;
 }
-.container-1 img:hover{
+.front-image img:hover{
     filter: grayscale(0%);
     transform: scale(1.1);
     transition: 0.9s;
 }
-.container-1 img:active{
+.front-image img:active{
     filter: grayscale(100%);
     transform: scale(1);
     transition: 0.9s;
@@ -246,52 +242,6 @@ nav ul li a{
         background-color: #595857;
     }
 }
-.container-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    z-index: 2;
-}
-.container-4 h1{
-    font-size: 50px;
-    font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container-4 p{
-    font-size: 17px;
-    font-weight: 300;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    z-index: 2;
-}
-.container-2 h1{
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container-2 .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    color: #ffffff;
-    z-index: 2;
-}
 .center-bottom{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -317,7 +267,7 @@ nav ul li a{
     transition: 0.6s;
 
 }
-.img1 h3{
+.center-bottom h3{
     opacity: 0;
 }
 .img1:hover h3{
@@ -326,155 +276,60 @@ nav ul li a{
     transition: 0.9s;
     box-shadow: inset;
 }
-.img2 h3{
-    opacity: 0;
-}
 .img2:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
-}
-.img3 h3{
-    opacity: 0;
 }
 .img3:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
 }
-.img4 p{
-    opacity: 0;
-    position: relative;
-    font-style: italic;
-    font-size: 10px;
-    font-weight: 400;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: solid 2px transparent;
-    color: rgb(156 163 175);
-}
-
-.img4:hover p{
-    opacity: 1;
-    transform: scale(1.1);
-    transition: 0.9s;
-}
-.img5 p{
-    opacity: 0;
-    position: relative;
-    font-style: italic;
-    font-size: 10px;
-    font-weight: 400;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: solid 2px transparent;
-    color: rgb(156 163 175);
-}
-
-.img5:hover p{
-    opacity: 1;
-    transform: scale(1.1);
-    transition: 0.9s;
-}
-
-.container-3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    z-index: 2;
-}
-.container-3 h1{
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.container-3 img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    margin: 30px;
-    border-radius: 10px;
-}
-
-.container-3 h3{
-    cursor: default;
-}
-.img4 h3{
-    opacity: 0;
-}
 .img4:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
-}
-.img5 h3{
-    opacity: 0;
 }
 .img5:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
 }
-.img6 h3{
-    opacity: 0;
-}
 .img6:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
 }
-.img7 h3{
-    opacity: 0;
-}
 .img7:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
-}
-.img8 h3{
-    opacity: 0;
-}
-.img8:hover h3{
+}.img8:hover h3{
     opacity: 1;
     transform: scale(1.1);
     transition: 0.9s;
 }
-/*.container-5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-    z-index: 2  ;
-}
-.container-5 title{
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center-bottom p{
+    opacity: 0;
     position: relative;
-    bottom: 50px;
-    font-size: 50px;
-    font-weight: 600;
+    font-style: italic;
+    font-size: 10px;
+    font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: solid 2px transparent;
+    color: rgb(156 163 175);
 }
-.container-5 img{
-    position: relative;
-    width: 200px;
-    height: 150px;
-    box-sizing: border-box;
-    border-radius: 10px;
-}*/
+.img4:hover p{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.img5:hover p{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.9s;
+}
 span{
     position: absolute;
     float: left;
@@ -486,4 +341,11 @@ span p{
     font-weight: 100;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: solid 2px transparent;
+}
+.container .center-top{
+    display: grid;
+    grid-gap: 5px;
+    position: relative;
+    bottom: 200px;
+    right: 280px;
 }
